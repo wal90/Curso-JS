@@ -29,3 +29,9 @@ document.write('Valor de a: ', a);
 document.write('<br>');
 a*=2; // ---> multiplica a por el numero, en este caso multiplica por 2
 document.write('Valor de a: ', a); 
+document.write('<br>');
+a/=3; // ---> divide a por el numero, en este caso 3
+document.write('Valor de a: ', a); 
+document.write('<br>');
+a**=2; // ---> potencia el numero de a al 2, osea al numero
+document.write('Valor de a: ', a); 
