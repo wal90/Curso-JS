@@ -54,3 +54,9 @@ document.write('<br>');
 document.write(valor1 <= valor2); // false, porque no es menor o igual
 document.write('<br>');
 document.write(valor1 >= valor2); // true, porque es mayor o igual.. en este caso es mayor
+
+
+
+// FUNCIONES MATEMATICAS 
+var precios = Math.round(399.53)
+document.write('Precio redondeado: '. precios)
