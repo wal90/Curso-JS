@@ -46,3 +46,11 @@ valor2 = 10;
 document.write(valor1 > valor2); // true
 document.write('<br>');
 document.write(valor1 < valor2); // false
+document.write('<br>');
+document.write(valor1 == valor2); // false, no son iguales
+document.write('<br>');
+document.write(valor1 != valor2); // true, porque si son diferentes
+document.write('<br>');
+document.write(valor1 <= valor2); // false, porque no es menor o igual
+document.write('<br>');
+document.write(valor1 >= valor2); // true, porque es mayor o igual.. en este caso es mayor
