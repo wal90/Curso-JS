@@ -58,5 +58,9 @@ document.write(valor1 >= valor2); // true, porque es mayor o igual.. en este cas
 
 
 // FUNCIONES MATEMATICAS 
-var precios = Math.round(399.53)
-document.write('Precio redondeado: '. precios)
+var precios = Math.round(399.53); // lo redondea al valor siguiente, dependiendo de .5, le importa el decimal
+document.write('Precio redondeado: '. precios); // es 400
+document.write('<br>');
+
+var precis = Math.ceil(299.9);// redondea al siguiente sin importar el .5, sin importar decimal
+document.write('Precio redondeado: '. precis); // 300
