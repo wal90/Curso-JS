@@ -35,3 +35,14 @@ document.write('Valor de a: ', a);
 document.write('<br>');
 a**=2; // ---> potencia el numero de a al 2, osea al numero
 document.write('Valor de a: ', a); 
+
+
+// OPERACIONES DE COMPARACIÓN
+
+let valor1, valor2;
+valor1 = 20;
+valor2 = 10;
+
+document.write(valor1 > valor2); // true
+document.write('<br>');
+document.write(valor1 < valor2); // false
