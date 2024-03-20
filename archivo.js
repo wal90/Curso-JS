@@ -17,3 +17,9 @@ document.write('<br>');
 a++; // aumenta el valor en 1
 
 document.write('Valor de a: ', a); // ----> ahora a vale 2
+document.write('<br>');
+a+=1; //---> aumenta el valor segun el numero que se le ponga
+document.write('Valor de a: ', a); // ---> ahora vale 3
+document.write('<br>');
+a--;
+document.write('Valor de a: ', a); //---> ahora vale 2 porque le reste 1
