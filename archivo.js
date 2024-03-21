@@ -73,3 +73,7 @@ document.write('<br>');
 var seno = Math.sin(45); // calcula el seno de un angulo
 document.write('Seno de 45: ', seno); // 0.850903
 document.write('<br>');
+
+var expo = Math.exp(2); // calcula el exponencial de un numero
+document.write('Exponencial de 2: ', expo); // 7.38905
+document.write('<br>');
