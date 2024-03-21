@@ -77,3 +77,7 @@ document.write('<br>');
 var expo = Math.exp(2); // calcula el exponencial de un numero
 document.write('Exponencial de 2: ', expo); // 7.38905
 document.write('<br>');
+
+var logaritmo = Math.log(10); // calcula logaritmo
+document.write('Logaritmo de 10: ', logaritmo); // 2.30258509
+document.write('<br>');
