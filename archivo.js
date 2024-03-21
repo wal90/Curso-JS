@@ -81,3 +81,15 @@ document.write('<br>');
 var logaritmo = Math.log(10); // calcula logaritmo
 document.write('Logaritmo de 10: ', logaritmo); // 2.30258509
 document.write('<br>');
+
+var absoluto = Math.abs(-10); // valor absoluto de un número
+document.write('v absoluto de  -10: ', absoluto); // 10
+document.write('<br>');
+
+var maximo = Math.max(10,50,600,1,8); // valor maximo de una secuencia
+document.write('Mayor valor : ', maximo); // 600
+document.write('<br>');
+
+var minimo = Math.min(10,50,600,1,8); // valor maximo de una secuencia
+document.write('Minimo valor : ', minimo); // 1
+document.write('<br>');
