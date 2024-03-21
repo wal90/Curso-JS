@@ -64,3 +64,8 @@ document.write('<br>');
 
 var precis = Math.ceil(299.9);// redondea al siguiente sin importar el .5, sin importar decimal
 document.write('Precio redondeado: '. precis); // 300
+document.write('<br>');
+
+var precios = Math.floor(540.9); // redondea para abajo, sin importar el decimal
+document.write('Precio redondeado: '. precios); // 540
+document.write('<br>');
