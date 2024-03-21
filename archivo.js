@@ -90,6 +90,26 @@ var maximo = Math.max(10,50,600,1,8); // valor maximo de una secuencia
 document.write('Mayor valor : ', maximo); // 600
 document.write('<br>');
 
-var minimo = Math.min(10,50,600,1,8); // valor maximo de una secuencia
+var minimo = Math.min(10,50,600,1,8); // valor minimo de una secuencia
 document.write('Minimo valor : ', minimo); // 1
+document.write('<br>');
+
+var aleatorio = Math.ramdom(); // valor aleatorio
+document.write('Valor aleatorio: ', aleatorio); // 1.54878 ---> cualquier numero
+document.write('<br>');
+
+var aleatorioR = Math.round(Math.ramdom()) ; // valor aleatorio redondeado
+document.write('Valor aleatorio: ', aleatorioR); // 1 o 0 --> trae esos numero porque no estoy especificando
+document.write('<br>');
+
+var aleatorioR = Math.round(Math.ramdom()*10) ; // valor aleatorio redondeado de 0 a 10
+document.write('Valor aleatorio: ', aleatorioR); // 4
+document.write('<br>');
+
+var valor = Math.sqrt(81) ; // raiz cuadrada de un numero
+document.write('Raíz cuadrada de 81: ', valor); // 9
+document.write('<br>');
+
+var exponente = Math.pow(4,2) ; // exponente de un número, el primer número elevando al segundo
+document.write('Valor de 4 a la 2: ', exponente); // 16
 document.write('<br>');
