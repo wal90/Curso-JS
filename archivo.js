@@ -59,13 +59,17 @@ document.write(valor1 >= valor2); // true, porque es mayor o igual.. en este cas
 
 // FUNCIONES MATEMATICAS 
 var precios = Math.round(399.53); // lo redondea al valor siguiente, dependiendo de .5, le importa el decimal
-document.write('Precio redondeado: '. precios); // es 400
+document.write('Precio redondeado: ', precios); // es 400
 document.write('<br>');
 
 var precis = Math.ceil(299.9);// redondea al siguiente sin importar el .5, sin importar decimal
-document.write('Precio redondeado: '. precis); // 300
+document.write('Precio redondeado: ', precis); // 300
 document.write('<br>');
 
 var precios = Math.floor(540.9); // redondea para abajo, sin importar el decimal
-document.write('Precio redondeado: '. precios); // 540
+document.write('Precio redondeado: ', precios); // 540
+document.write('<br>');
+
+var seno = Math.sin(45); // calcula el seno de un angulo
+document.write('Seno de 45: ', seno); // 0.850903
 document.write('<br>');
