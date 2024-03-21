@@ -10,16 +10,23 @@
         let texto1 = 'JavaScript';
         let texto2 = "JavaScript";
         let texto3 = 'Eso es "la verdad" de todo'; // poner uno con comillas siemples y otro doble
-        let texto4 = 'Esto es una cadena muy larga' +
-         'y necesita que dividamos en varias lineas' +
+        // ESTO ES CON SALTO DE LINEA
+        let texto4 = 'Esto es una cadena muy larga ' + '<br>' +
+         'y necesita que dividamos en varias lineas ' + '<br>' +
          'de lo contrario, el codigo es ilegible';
+        // SIN SALTO DE LINEA PERO LA BARRA LO SEPARA Y FUCNIONA LINEAS
+         let texto5 = 'Esto es una cadena muy larga \
+         y necesita que dividamos en varias lineas \
+         de lo contrario, el codigo es ilegible';
         document.write(texto1)
         document.write('<br>');
         document.write(texto2);
         document.write('<br>');
         document.write(texto3);
         document.write('<br>');
-        document.write(texto4)
+        document.write(texto4);
+        document.write('<br>');
+        document.write(texto5)
 
     </script>
 </body>
