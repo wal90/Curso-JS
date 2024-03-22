@@ -14,25 +14,46 @@
         // Cantidad de letras
         document.write('Cantidad de letras: ', palabra.length);
         document.write('<br>');
+
         // Cantidad especifica de letras
         document.write('Primeras 4 letras: ', palabra.slice(0,4)); // Java
         document.write('<br>');
+
         // Cantidad especifica de letras
         document.write('Primeras 4 letras: ', palabra.substring(0,4)); // Java
         document.write('<br>');
+
         // Cambiar valores de un texto
         let saludo = 'Hola a todos';
-        saludo = saludo.replace('Hola', 'Adios'); // va a cambiar Hola por Adios
+        saludo = saludo.replace('Hola', 'Adios'); // Va a cambiar Hola por Adios
         document.write(saludo); // Adios a todos
         document.write('<br>');
+
         // Poner en mayúscula
         document.write('En mayúscula: ', palabra.toUpperCase());
         document.write('<br>');
+
         // Poner en minúscula
         document.write('En minuscula: ', palabra.toLowerCase());
+        document.write('<br>');
+
         // Unir texto
         let palabra2 = 'Curso de ';
         document.write('Unir palabras: ', palabra2.concat(palabra)); // Curso de JavaScript
+        document.write('<br>');
+
+        // Acortar espacios entre textos
+        let palabra3 = '        Hola      ';
+        document.write(palabra3); // Hola ---> NO CUENTA LOS ESPACIOS
+        document.write('<br>');
+        document.write(palabra.trimStart()) //---> Borra los espacios del comienzo, izq
+        document.write('<br>');
+        document.write(palabra.trimEnd()) //---> Borra los espacios del final, der
+        document.write('<br>');
+        document.write(palabra.trim()) //---> Borra cualquier espacio
+
+
+
 
 
     </script>
