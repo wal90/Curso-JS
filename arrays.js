@@ -43,3 +43,13 @@ document.write('<br>');
 numeros.push(-10);
 document.write(numeros)// 14, 80, 650, 50.3, -10
 document.write('<br>');
+
+// ELIMINAR PRIMER ELEMENTO
+numeros.shift();
+document.write(numeros)// 80, 650, 50.3, -10
+document.write('<br>');
+
+// AGREGAR ELEMENTO AL INICIO
+numeros.unshift(1000);
+document.write(numeros)//1000, 80, 650, 50.3, -10
+document.write('<br>');
