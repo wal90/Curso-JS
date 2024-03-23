@@ -29,4 +29,7 @@ document.write('En string: ', numeros.toString()); // ahora son de tipo texto
 document.write('<br>');
 
 // UNIR TIPOS DE ARRAYS
+let letras = ['a', 'b', 'c'];
+let numeros2 = [1,2,3];
+document.write('Alfanumerico: ', letras.concat(numeros2))
 
