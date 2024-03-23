@@ -53,3 +53,14 @@ document.write('<br>');
 numeros.unshift(1000);
 document.write(numeros)//1000, 80, 650, 50.3, -10
 document.write('<br>');
+
+// ELIMINAR ELEMENTOS A PARTIR DE UNA UBICACIÓN
+numeros.splice(2,3);
+document.write(numeros)//1000, 80 ---> se quedan dos, sacan 3
+document.write('<br>');
+
+// COPIAR UN NUEVO ARRAY
+let cantidades = [100,200,500,500,800];
+let copia = cantidades.slice(1,4); // siempre es la anterior al número que puse (4)
+document.write('Array copia: ', copia); // 200,500,600
+
