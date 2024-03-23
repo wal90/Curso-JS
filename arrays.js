@@ -72,6 +72,16 @@ document.write('<br>');
 
 // ORGANIZAR DE MANERA REVERSA
 document.write(objetos.reverse()); // trae el array de arriba de manera al revea... 'zorro', 'planeta'...
+document.write('<br>')
+
+// ARRAY CON VALORES INALTERABLES
+// CON const NO SE PUEDEN ALTERAR NINGUNO DE LOS VALORES, DA ERROR
+const autos = ['Toyota', 'Chevrolet', 'BMW'];
+document.write('Autos: ', autos);
+document.write('<br>');
+
+
+
 
 
 
