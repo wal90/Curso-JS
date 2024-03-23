@@ -31,5 +31,15 @@ document.write('<br>');
 // UNIR TIPOS DE ARRAYS
 let letras = ['a', 'b', 'c'];
 let numeros2 = [1,2,3];
-document.write('Alfanumerico: ', letras.concat(numeros2))
+document.write('Alfanumerico: ', letras.concat(numeros2));
+document.write('<br>');
 
+// BORRAR EL ÚLTIMO ELEMENTO 
+numeros.pop()
+document.write(numeros)// 14, 80, 650, 50.3
+document.write('<br>');
+
+// AGREGAR ELEMENTO AL FINAL
+numeros.push(-10);
+document.write(numeros)// 14, 80, 650, 50.3, -10
+document.write('<br>');
