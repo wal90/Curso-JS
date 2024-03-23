@@ -66,7 +66,12 @@ document.write('Array copia: ', copia); // 200,500,600
 document.write('<br>');
 
 // ORGANIZAR ALFABETICAMENTE
-let objetos = [ 'botella', 'auto','planeta, zorro'];
-document.write(objetos.sort()); //  'auto','botella', 'planeta, zorro';
+let objetos = [ 'botella', 'auto','planeta', 'zorro'];
+document.write(objetos.sort()); //  'auto','botella', 'planeta', 'zorro';
+document.write('<br>');
+
+// ORGANIZAR DE MANERA REVERSA
+document.write(objetos.reverse()); // trae el array de arriba de manera al revea... 'zorro', 'planeta'...
+
 
 
