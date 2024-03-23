@@ -63,4 +63,10 @@ document.write('<br>');
 let cantidades = [100,200,500,500,800];
 let copia = cantidades.slice(1,4); // siempre es la anterior al número que puse (4)
 document.write('Array copia: ', copia); // 200,500,600
+document.write('<br>');
+
+// ORGANIZAR ALFABETICAMENTE
+let objetos = [ 'botella', 'auto','planeta, zorro'];
+document.write(objetos.sort()); //  'auto','botella', 'planeta, zorro';
+
 
