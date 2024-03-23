@@ -7,3 +7,8 @@ document.write('Primer elemento: ', numeros[0]); // 15
 document.write('<br>');
 numeros[0] = 14;
 document.write('Elementos: ', numeros); //---> ahora el primer elemento es el 14
+document.write('<br>-----------------');
+
+let frutas = ['manzanas', 'peras', 'naranjas', 'mangos'];
+document.write('<br>');
+document.write('Frutas: ', frutas)
