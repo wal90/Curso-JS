@@ -17,3 +17,24 @@ switch (valor) {
         document.write('No es un número válido')
         break;
 }
+
+
+let color;
+color = prompt('INGRESE UN COLOR: ROJO/VERDE/AZUL');
+
+switch (color) {
+    case 'rojo':
+        document.write('Ingreso ROJO')
+    break;
+    case 'verde':
+        document.write('Ingreso VERDE')
+    break;
+    case 'azul':
+        document.write('Ingreso AZUL')
+    break;
+
+
+
+    default:
+        break;
+}
