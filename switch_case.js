@@ -23,14 +23,14 @@ let color;
 color = prompt('INGRESE UN COLOR: ROJO/VERDE/AZUL');
 
 switch (color) {
-    case 'rojo':
-        document.write('Ingreso ROJO')
+    case 'rojo': // El valor ingresado tiene que ser en minuscula
+        document.write('Ingreso rojo')
     break;
     case 'verde':
-        document.write('Ingreso VERDE')
+        document.write('Ingreso verde')
     break;
     case 'azul':
-        document.write('Ingreso AZUL')
+        document.write('Ingreso azul')
     break;
 
 
