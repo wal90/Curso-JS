@@ -36,5 +36,6 @@ switch (color) {
 
 
     default:
+        document.write('No ingreso color')
         break;
 }
