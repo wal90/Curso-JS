@@ -15,7 +15,7 @@ if (continente == 'America' && edad >= 18){
     document.write('O  no eres adulto, o no eres americano')
 }
 
-// OPERADOR || (OR)
+// OPERADOR || (OR) ---> con que se cumpla una condición ya es VERDADERO
 
 let dia, mes, anio; // No se puede poner una variable con Ñ
 dia = prompt('INGRESE DIA: ');
