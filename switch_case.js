@@ -14,5 +14,6 @@ switch (valor) {
         break;
 
     default:
+        document.write('No es un número válido')
         break;
 }
