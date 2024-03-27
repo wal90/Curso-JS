@@ -14,3 +14,14 @@ let usuario, clave, control;
 control = 0;
 usuario = prompt('Ingrese usuario: ');
 clave = prompt('Ingrese su contraseña: ');
+
+do { // Para quse se pueda ingresar mientras la clave sea 'Admin'
+    if(clave != 'Admin'){
+        clave = prompt('CONTRASEÑA INCORRECTA\n '+
+                'INTENTE DE NUEVO');
+                control = 0;
+    } else {
+        control = 1
+    }
+} while (control != 1); // Cuando el control sea 1 para de ejecutarse
+document.write('ACCESO CORRECTO!')
