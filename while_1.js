@@ -1,7 +1,8 @@
 let f = 1;
 
-while (f < 10) {
+while (f <=10) {
     document.write('Vuelta no. ', f);
     document.write('<br>');
     f++;
 }
+document.write('FIN DEL BUCLE')
