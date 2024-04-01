@@ -13,7 +13,7 @@ let resultado = '';
 
 for(let f in palabra){
     if(palabra[f]=='a'){
-        continue; // salta el valor
+        continue; // salta el valor - aca ignora a A
     }else {
         resultado += palabra[f] // le va a asignar a resultado esa letra, que no sea una a
     }
