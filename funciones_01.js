@@ -16,4 +16,8 @@ function saludar2(){
     saludar();
 }
 
-// Otro ejemplo
+// Otro ejemplo:
+/*function saludar(){
+    let saludo = prompt('INGRESE UN SALUDO');
+    alert(saludo)
+}*/
