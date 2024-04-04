@@ -26,3 +26,5 @@ document.write('<br>');
 document.write(homero.trabajar());
 document.write('<br>');
 document.write('Bart ', bart.apellido); // Bart Simpson
+document.write('<br>');
+document.write('Estudia en: ', bart.estudiar());
