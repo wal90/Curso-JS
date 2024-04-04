@@ -18,4 +18,11 @@ class Persona{
 }
 
 // Aca estamos definiendo un objeto, que tiene los atributos y métodos de Persona
-const homero = new Persona()
+const homero = new Persona();
+const bart = new Persona();
+
+document.write(homero.nombre + ' ' + homero.apellido); // Homero Simpson
+document.write('<br>');
+document.write(homero.trabajar());
+document.write('<br>');
+document.write('Bart ', bart.apellido); // Bart Simpson
