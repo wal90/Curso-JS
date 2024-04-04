@@ -5,3 +5,5 @@ var Auto = {
     color: 'Rojo',
     tipo: 'sedán'
 }
+
+docuement.write('Marca: ', Auto.marca) // Marca: Toyota
