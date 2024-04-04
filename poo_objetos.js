@@ -3,7 +3,10 @@ var Auto = {
     modelo: 'Corolla',
     anio: 2023,
     color: 'Rojo',
-    tipo: 'sedán'
+    tipo: 'sedán',
+    radio: ['FM', 'MP4', 'USB']
 }
 
-docuement.write('Marca: ', Auto.marca) // Marca: Toyota
+document.write('Marca: ', Auto.marca); // Marca: Toyota
+document.write('<br>');
+document.write('Radio: ', Auto.radio); // Radio: FM, MP4, USB
