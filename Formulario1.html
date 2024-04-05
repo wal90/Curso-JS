@@ -8,7 +8,14 @@
 <body>
     <h4>Botón de incrementar</h4><br>
     <form>
-        <input type="button" value="Incrementar">
+        <input type="button" value="Incrementar" onclick="incrementar()">
     </form>
+    <script>
+        let contador = 0;
+        function incrementar(){ 
+            contador++;
+            alert('VALOR: '+ contador) // cada vez q se toque el boton va a aparecer el aler indicando la cantidad de veces ya presionadas
+        }
+    </script>
 </body>
 </html>
