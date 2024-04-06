@@ -14,11 +14,23 @@
         Ingrese clave: <br>
         <input type="password" id="clave">
         <br><br>
-        <input type="button" value="Confirmar">
-
-
-
-
+        <input type="button" value="Confirmar" onclick="">
     </form>
+
+    <script>
+        let control = 0;
+        let contrasenia = 'acceso01';
+
+        function verificar(){
+            let clave = document.getElementById('calve').value;
+            if(clave != contrasenia){
+                alert('Clave incorrecta. Intente de nuevo')
+            } else{
+                window.open();// para que habra otra pagina
+            }
+
+
+        }
+    </script>
 </body>
 </html>
