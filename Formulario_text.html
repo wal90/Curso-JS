@@ -14,7 +14,7 @@
         Ingrese clave: <br>
         <input type="password" id="clave">
         <br><br>
-        <input type="button" value="Confirmar" onclick="">
+        <input type="button" value="Confirmar" onclick="verificar()">
     </form>
 
     <script>
@@ -23,13 +23,15 @@
 
         function verificar(){
             let clave = document.getElementById('calve').value;
-            if(clave != contrasenia){
-                alert('Clave incorrecta. Intente de nuevo')
+            if(clave != contrasenia || clave == ''){
+                alert('Clave incorrecta o vacía. Intente de nuevo');
+                control++; //  cada vez q sea incorrecta suma 1
+                if(control >=3){
+                    alert('Intentos agotados, acceso bloqueado')
+                }
             } else{
-                window.open();// para que habra otra pagina
+                window.open("http://google.com");// para que habra otra pagina
             }
-
-
         }
     </script>
 </body>
