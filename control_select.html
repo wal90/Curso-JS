@@ -9,7 +9,7 @@
     <h4>Colore de semáforo</h4>
     <form>
         <p>
-            <select  id="select1" onchange="">
+            <select  id="select1" onchange="cambiarcolor()">
                 <option value="puede continuar">Verde</option>
                 <option value="precaución para detenerse">Amarillo</option>
                 <option value="debe detenerse">Rojo</option>
@@ -18,6 +18,15 @@
     <p>Indice seleccionado: <input type="text" id="text1"></p>
     <p>Color seleccionado: <input type="text" id="text2"></p>
     <p>Indicación: <input type="text" id="text3"></p>
+
+    <script>
+        function cambiarcolor(){
+            let seleccion = document.getElementById('select1');
+            document.getElementById('text1').value = seleccion.selectedIndex; // selecciona la p y lo lleva a la variable seleccion, selecciona el indice
+            document.getElementById('text2').value = seleccion.options[seleccion.selectedIndex].text // lo mismo que lo anterior pero selecciona el color
+            document.getElementById('text3').value = seleccion.options[seleccion.selectedIndex].value
+        }
+    </script>
 
     </form>
 </body>
