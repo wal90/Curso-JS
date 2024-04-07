@@ -15,8 +15,8 @@
                 <option value="debe detenerse">Rojo</option>
         </select> 
     </p>
-    <p>Indice seleccionado: <input type="text" id="text1"></p>
-    <p>Color seleccionado: <input type="text" id="text2"></p>
+    <p>Indice seleccionado: <input type="text" id="text1" size="1"></p>
+    <p>Color seleccionado: <input type="text" id="text2" size="5"></p>
     <p>Indicación: <input type="text" id="text3"></p>
 
     <script>
@@ -26,6 +26,8 @@
             document.getElementById('text2').value = seleccion.options[seleccion.selectedIndex].text // lo mismo que lo anterior pero selecciona el color
             document.getElementById('text3').value = seleccion.options[seleccion.selectedIndex].value
         }
+
+        //selectedIndex ---> es para que seleccione el indice
     </script>
 
     </form>
