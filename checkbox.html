@@ -13,9 +13,29 @@
         <input type="checkbox" id="check3">C#<br>
         <input type="checkbox" id="check4">Python<br>
         <input type="checkbox" id="check5">JavaScript<br>
-
-        
-
+        <input type="button" value="Confirmar" onClick="seleccion()">
     </form>
+
+    <script>
+        function seleccion(){
+            let cantidad = 0;
+            if(document.getElementById('check1').checked){ // si el elemento seleccionado esta check
+                cantidad++;
+            }
+            if(document.getElementById('check2').checked){ 
+                cantidad++;
+            }
+            if(document.getElementById('check3').checked){
+                cantidad++;
+            }
+            if(document.getElementById('check4').checked){ 
+                cantidad++;
+            }
+            if(document.getElementById('check5').checked){ 
+                cantidad++;
+            }
+            alert('')
+        }
+    </script>
 </body>
 </html>
