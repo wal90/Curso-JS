@@ -15,9 +15,22 @@
         <input type="radio" id="radio2" name="horario">Tarde<br>
         <input type="radio" id="radio3" name="horario">Noche<br>
         <br><br>
-
-
+        <input type="button" value="Confirmar" onclick="seleccion()">
     </form>
+
+    <script>
+        function seleccion(){
+            if(document.getElementById('radio1').checked){
+                swal('Horario de 8am a 12am');
+            }
+            if(document.getElementById('radio2').checked){
+                swal('Horario de 2pm a 6pm');
+            }
+            if(document.getElementById('radio3').checked){
+                swal('Horario de 7pm a 11pm');
+            }
+        }
+    </script>
     
 </body>
 </html>
