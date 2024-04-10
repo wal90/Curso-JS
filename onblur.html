@@ -6,8 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- ONBLUR permite controlar un formulario si es que se toca en cualquier lugar -->
     <h5>Ingreso de datos</h5>
     Ingrese su nombre
     <input type="text" id="nombre" onfocus="f_focus()" onblur="f_blur()">
+
+    <script>
+        function f_focus(){
+            document.getElementById('nombre').value = "";
+            document.getElementById('nombre').style.background = ''; // para que el fondo de la casilla no tenga estilo
+        }
+
+        function f_blur(){
+            if(document.getElementById('nombre').value == ""){
+                document.getElementById('nombre').style.background = 'red'; // para que el fondo de la casilla sea rojo
+                alert('Debe ingresar datos');
+            }
+        }
+    </script>
 </body>
 </html>
