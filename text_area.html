@@ -11,6 +11,16 @@
     <h5>Comentarios</h5>
     <form>
         <p><textarea  id="comentarios" cols="40" rows="20"></textarea></p>
+        <input type="button" value="Enviar" onclick="comentar()">
     </form>
+    <script>
+        function comentar(){
+            if(document.getElementById('comentarios').value.length > 100){
+                swal('El comentario es muy largo')
+            }else{
+               swal('Gracias!') ;
+            }
+        }
+    </script>
 </body>
 </html>
