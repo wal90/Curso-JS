@@ -14,6 +14,9 @@
         <input type="button" value="Enviar" onclick="comentar()">
     </form>
     <script>
+        let area = document.getElementById('comentarios');
+        area.style.resize = "none"; // para no redimensionalizar el tamaño del text area
+
         function comentar(){
             if(document.getElementById('comentarios').value.length > 100){
                 swal('El comentario es muy largo')
