@@ -8,5 +8,13 @@
 <body>
     Ir a Wikipedia.com
     <input type="button" onclick="rediccionar()" value="Ir">
+
+    <script>
+        function rediccionar(){
+            if(window.confirm('Desea salir de la página?')){
+                window.location = 'https://wikipedia.com';
+            }
+        }
+    </script>
 </body>
 </html>
