@@ -16,9 +16,14 @@
 
     </form>
     <script>
-        function abrir(){
+        function abrir(){ // esta funcion abre en otra pestaña
             let ventana = open(); // open() --> funcion interna de javascript
-            ventana.document.write('Soy otrta página web')
+            ventana.document.write('Soy otra página web')
+        }
+
+        function ventana(){
+            let ventana = open('','', 'width=400, height=250'); // con las comillas es ventana externa
+            ventana.document.write('Soy otra ventana de pagina web');
         }
     </script>
 </body>
