@@ -25,6 +25,15 @@
             let ventana = open('','', 'width=400, height=250'); // con las comillas es ventana externa
             ventana.document.write('Soy otra ventana de pagina web');
         }
+
+        function confirmar(){
+            let respuesta = confirm('Desea salir de la página?');
+            if(respuesta == true){
+                window.close()
+            }
+        }
+
+
     </script>
 </body>
 </html>
