@@ -8,10 +8,11 @@
 
 </head>
 <body>
-    <p><textarea id="texto" rows="10" cols="35" maxlength="140" onfocus="vaciar(this)"></textarea></p>
+    <p><textarea id="texto" rows="10" cols="35" maxlength="140"></textarea></p>
+     <!-- onfocus es un evento del mouse  -->
     <p>
         Carácteres disponibles:
-        <span id="cantidad">20</span>
+        <span id="cantidad">100</span>
     </p>
 
     <script>
@@ -19,6 +20,17 @@
         // add event listener ---> es un escuchador que permite que se ejecute cuando haya un evento en particular
         // keyup ---> es el evento al que quiero responder, son las teclas del teclado.. seria escuchar el teclado
         // caracteres ---> es una funcion que se va a ejecutar cada ves que haya un keyup
+
+        function caracteres(){
+            let cant = document.getElementById('texto').value.length; //va a contar todos los caracteres
+            let disponibles = 100 - parseInt(cant);
+            document.getElementById('cantidad').innerHTML = disponibles; // quiere decir que sacamos los elementos de cantidad
+            // innerHTML --> permite acceder al contenido internto de un elemento en formatod d cadena de texto, obtener o establecer contenido
+
+            if(disponibles == 0){
+                swal('Cantidad de caráteres agotados');
+            } 
+        }
     </script>
 </body>
 </html>
