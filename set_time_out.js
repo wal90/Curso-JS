@@ -14,4 +14,5 @@ function comenzarTiempo(){
 function tiempocumplido(){
     elementoTextoAlarma.textContent = "ENCENDIDO";// textContent: es para que lo seleccionado muestre el texto
     elementoTextoAlarma.style.color = "green";
+    elementoSonidoAlarma.play();
 }
