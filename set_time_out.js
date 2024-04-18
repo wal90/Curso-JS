@@ -12,11 +12,22 @@ function comenzarTiempo(){
 // }
 
 function tiempocumplido(){
-    elementoTextoAlarma.textContent = "ENCENDIDO";// textContent: es para que lo seleccionado muestre el texto
+    //elementoTextoAlarma.textContent = "ENCENDIDO";// textContent: es para que lo seleccionado muestre el texto
     elementoTextoAlarma.style.color = "green";
     elementoSonidoAlarma.play();
 }
 
 function comenzarReloj(){
     setInterval(tictac, 1000) // llama a una funcion cada vez que pasa un determinado tiempo, luedo pongo el tiempo
+}
+
+function tictac(){
+    let tiempoActual = new Date();
+    let hora = tiempoActual.getHours();
+    let minutos = tiempoActual.getMinutes();
+    let segundos = tiempoActual.getSeconds();
+
+    let textoHora = hora + ':' + minutos + ':' + segundos; 
+
+    elementoTextoAlarma.textContent = textoHora;
 }
