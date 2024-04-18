@@ -16,3 +16,7 @@ function tiempocumplido(){
     elementoTextoAlarma.style.color = "green";
     elementoSonidoAlarma.play();
 }
+
+function comenzarReloj(){
+    setInterval(tictac, 1000) // llama a una funcion cada vez que pasa un determinado tiempo, luedo pongo el tiempo
+}
