@@ -25,7 +25,7 @@ function tictac(){
     let tiempoActual = new Date();
     let hora = tiempoActual.getHours();
     let minutos = tiempoActual.getMinutes();
-    let segundos = tiempoActual.getSeconds();
+    let segundos = String(tiempoActual.getSeconds()).padStart(2, "0") ; // padstar establece cual es el largo maximo que tiene que tener el elemeto.. en este caso serian 2 por dos digitos, y en caso que no haya dos digitos que haya un 0
 
     let textoHora = hora + ':' + minutos + ':' + segundos; 
 
