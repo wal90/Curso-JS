@@ -18,7 +18,8 @@
 
         class Futbolista extends Deportista{
             constructor(nombre, apellido, goles){
-                super() // para que herede lo de deportista
+                super(nombre, apellido) // para que herede lo de deportista
+                this.goles = goles; // nuevo atributo
             }
         }
     </script>
