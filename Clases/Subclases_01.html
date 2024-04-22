@@ -8,7 +8,19 @@
 <body>
     
     <script>
-        
+        class Deportista{
+            constructor(nombre, apellido){
+                this.nombre = nombre;
+                this.apellido = apellido;
+            }
+        }
+
+
+        class Futbolista extends Deportista{
+            constructor(nombre, apellido, goles){
+                super() // para que herede lo de deportista
+            }
+        }
     </script>
 </body>
 </html>
