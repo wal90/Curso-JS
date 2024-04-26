@@ -49,8 +49,8 @@ function mostrarAnimales(){
     let lista = document.getElementById('listaAnimales');
 
     for(let animal of animales){
-        let item = document.createElement('li');
-        item.innerText = animal.informacion();
-        lista.appendChild(item);
+        let item = document.createElement('li'); // item para agregarlo a la lista
+        item.innerText = animal.informacion(); // que tenga un texto interno, es un string con info
+        lista.appendChild(item); //llamo a la lista con un hijo q sea el item
     }
 }
