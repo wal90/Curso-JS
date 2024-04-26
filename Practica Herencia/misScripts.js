@@ -8,3 +8,13 @@ class Animal {
         return '${this.nombre} - ${this.peso} kg. - ${this.edad} años';
     }
 }
+
+class Perro extends Animal{
+    constructor(nombre, peso, edad, raza){
+        super(nombre, edad, peso);
+        this.raza = raza;
+    }
+    informacion(){
+        return '${this.nombre} - ${this.peso} kg. - ${this.edad} años \ - ${this.raza}';
+    }
+}
