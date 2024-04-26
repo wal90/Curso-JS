@@ -28,3 +28,13 @@ class Gato extends Animal{
         return '${this.nombre} - ${this.peso} kg. - ${this.edad} años \ - ${this.sexo}';
     }
 }
+
+class Conejo extends Animal{
+    constructor(nombre, peso, edad, color){
+        super(nombre, edad, peso);
+        this.color = color;
+    }
+    informacion(){
+        return '${this.nombre} - ${this.peso} kg. - ${this.edad} años \ - ${this.color}';
+    }
+}
