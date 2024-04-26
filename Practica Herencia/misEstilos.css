@@ -18,3 +18,16 @@ button{
     border-radius: 50px;
     cursor: pointer;
 }
+
+ul{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    background-color: rgb(132, 255, 255);
+    padding: 8px;
+    border-bottom: 1px solid white;
+    text-align: center;
+}
