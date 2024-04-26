@@ -4,4 +4,7 @@ class Animal {
         this.peso = peso;
         this.edad = edad;
     }
+    informacion(){
+        return '${this.nombre} - ${this.peso} kg. - ${this.edad} años';
+    }
 }
