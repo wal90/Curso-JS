@@ -1,0 +1,14 @@
+{
+    "nombre": "Walter Martinez",
+    "edad": 33,
+    "estudiante": true,
+    "direccion": {
+        "calle": "Deheza 1724",
+        "ciudad": "Avellaneda"
+    },
+    "tefefonos": [
+        "116582-1157",
+        "110505-0505"
+
+    ]
+}
