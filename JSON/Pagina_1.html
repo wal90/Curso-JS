@@ -29,12 +29,24 @@
     //     let elementexto = document.getElementById("nombre");
     //     elementexto.textContent = miPersona.nombre
 
+    // TODO ESTO SIRVE SI NUESTRO ARCHIVO JSON SE ENCUENTRA EN LA MISMA CARPETA
+
     let datosJson;
     let xhr = new XMLHttpRequest(); // para solicitar a un objeto json su info
 
     xhr.open('GET', 'persona.json', true); // pongo el metodo para obtener datos, y el nombre del archivo o la ruta, si es asincrono o no
     xhr.responseType = 'json'; // estamos diciendo que tipo de respuesta queremos tener
+    xhr.onload = function(){
+        if(xhr.status === 200){
+            datosJson = xhr.response; // es la respuesta en si misma
+            let elementexto = document.getElementById("nombre");
+            elementexto.textContent = datosJson.nombre
+        } else{
+            // manejar el error
+        }
+    }    // evento para que el archivo se cargue
 
+    xhr.send(); // para que aparezca lo que busco
 
     </script>
 </body>
