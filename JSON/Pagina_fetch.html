@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JSON</title>
 </head>
 <body>
-    
+    <div id="nombre"></div>
+
+    <script>
+        let datoJson;
+
+        fetch('persona.json')
+        .then(res => res.json())// se va a ejecutar cuando se cumpla lo que esta en parentesis, then es la respuesta del servidor
+    </script>
 </body>
 </html>
