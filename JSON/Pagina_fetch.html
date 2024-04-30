@@ -13,6 +13,11 @@
 
         fetch('persona.json')
         .then(res => res.json())// se va a ejecutar cuando se cumpla lo que esta en parentesis, then es la respuesta del servidor
+        .then((salida) => {
+            datoJson = salida;
+        })
+        let elementexto = document.getElementById("nombre");
+        elementexto.textContent = datoJson
     </script>
 </body>
 </html>
