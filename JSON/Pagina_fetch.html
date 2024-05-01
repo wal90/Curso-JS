@@ -19,7 +19,10 @@
              let elementexto = document.getElementById("nombre");
                  elementexto.textContent = datoJson.nombre
         })
-        .catch
+        .catch(function(error){ 
+            alert (error)
+
+        })
        
     </script>
 </body>
