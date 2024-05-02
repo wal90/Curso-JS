@@ -16,6 +16,25 @@ function consulta(){
         document.getElementById("direccion")
         direccion.textContent = salida.direccion;
 
+        document.getElementById("telefono")
+        telefono.textContent = salida.telefono;
+
+        document.getElementById("email")
+        email.textContent = salida.email;
+
+        document.getElementById("saldo_usd")
+        saldo_usd.textContent = salida.saldo_usd;
+
+        document.getElementById("saldo_eu")
+        saldo_eu.textContent = salida.saldo_eu;
+
+        document.getElementById("miembro_desde")
+        miembro_desde.textContent = salida.miembro_desde;
+
+     
+
+
+
 
 
     
