@@ -11,25 +11,28 @@ function consulta(){
         titular.textContent = salida.titular;
 
         document.getElementById("no_miembro")
-        no_miembro.textContent = salida.no_miembro;
+        no_miembro.textContent = 'No. de miembro: ' + salida.no_miembro;
 
         document.getElementById("direccion")
-        direccion.textContent = salida.direccion;
+        direccion.textContent = 'Dirección: ' + salida.direccion;
 
         document.getElementById("telefono")
-        telefono.textContent = salida.telefono;
+        telefono.textContent = 'Teléfono: ' + salida.telefono;
 
         document.getElementById("email")
-        email.textContent = salida.email;
+        email.textContent ='Email: ' +  salida.email;
 
         document.getElementById("saldo_usd")
-        saldo_usd.textContent = salida.saldo[0].monto;
+        saldo_usd.textContent = 'Monto en $US: ' + salida.saldo[0].monto;
 
         document.getElementById("saldo_eu")
-        saldo_eu.textContent = salida.saldo_eu[1].monto;
+        saldo_eu.textContent = 'Monto en Euros: ' + salida.saldo_eu[1].monto;
 
         document.getElementById("miembro_desde")
-        miembro_desde.textContent = salida.miembro_desde;
+        miembro_desde.textContent = 'Miembro desde: ' + salida.miembro_desde;
+
+        let imagen = getElementById("foto");
+        imagen.appendChild(foto)
 
      
 
