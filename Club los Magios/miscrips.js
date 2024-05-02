@@ -23,10 +23,10 @@ function consulta(){
         email.textContent = salida.email;
 
         document.getElementById("saldo_usd")
-        saldo_usd.textContent = salida.saldo_usd;
+        saldo_usd.textContent = salida.saldo[0].monto;
 
         document.getElementById("saldo_eu")
-        saldo_eu.textContent = salida.saldo_eu;
+        saldo_eu.textContent = salida.saldo_eu[1].monto;
 
         document.getElementById("miembro_desde")
         miembro_desde.textContent = salida.miembro_desde;
