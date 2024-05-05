@@ -1,5 +1,6 @@
 let boton = document.getElementById("boton1");
 let div1 = document.getElementById("div1");
+let enlace = docuement.getElementById("enlace1");
 
 
 // ADD EVENT LISTENER ---> MOUSEOVER / CLICK
@@ -31,3 +32,11 @@ function mostrarMensaje(event){
 //boton.addEventListener("click", mostrarMensaje);
 
 div1.addEventListener("click", mostrarMensaje)
+
+//------------------------ ENLACE
+
+function bloqueoEnlace(event){
+    event.preventDefault(); // para prevenir
+    alert('Enlace desabilitado');
+}
+enlace.addEventListener("click", bloqueoEnlace)
