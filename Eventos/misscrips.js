@@ -1,4 +1,5 @@
 let boton = document.getElementById("boton1");
+let div1 = document.getElementById("div1");
 
 
 // ADD EVENT LISTENER ---> MOUSEOVER / CLICK
