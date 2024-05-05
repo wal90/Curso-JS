@@ -24,7 +24,10 @@ let div1 = document.getElementById("div1");
 
 // event ----> el evento que se va a reconocer con el addEventListener
 function mostrarMensaje(event){
-    alert(event.target) // mostrar info del objetivo del evento. target (info)
+    alert(event.target) // mostrar info del objetivo del evento. target (info) - aca es el boton donde sucedio el evento
+    alert(event.currentTarget); // objetivo actual.. es donde se encuentra el boron, osea el div
 }
 
-boton.addEventListener("click", mostrarMensaje);
+//boton.addEventListener("click", mostrarMensaje);
+
+div1.addEventListener("click", mostrarMensaje)
