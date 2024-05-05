@@ -1,17 +1,29 @@
 let boton = document.getElementById("boton1");
 
-function muestramensaje(){
-    alert("Boton presionado!")
-}
 
-function mensaje2(){
-    alert("Soy un mouseover!")
-}
+// ADD EVENT LISTENER ---> MOUSEOVER / CLICK
 
-boton.addEventListener("mouseover", mensaje2);
+// function muestramensaje(){
+//     alert("Boton presionado!")
+// }
 
-boton.addEventListener("click", muestramensaje);
+// function mensaje2(){
+//     alert("Soy un mouseover!")
+// }
+
+// boton.addEventListener("mouseover", mensaje2);
+
+// boton.addEventListener("click", muestramensaje);
 
 // boton.addEventListener("click", function(){
 //     alert("Presionaste el boton");
 // }) // 1 el evento - despues es escuchador
+
+//----------------------------------------------------------------------
+
+// event ----> el evento que se va a reconocer con el addEventListener
+function mostrarMensaje(event){
+    alert(event.target) // mostrar info del objetivo del evento. target (info)
+}
+
+boton.addEventListener("click", mostrarMensaje);
