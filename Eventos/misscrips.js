@@ -66,3 +66,6 @@ texto1.addEventListener('keyup', function(event){
 texto1.addEventListener('keypress', function(event){
     console.log('Caracetr ingresado: ' + event.key) // la tecla que se presiono, es lo que se presiona
 } ) // keypress ----> es cuando se presiona y se suelta rapidamente una tecla
+
+
+//-------------------- PÁGINA 3 -------------------------------------------------
