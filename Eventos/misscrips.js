@@ -51,5 +51,9 @@ let texto1 = document.getElementById("mitexto");
 
 
 function verificaNumero(event){
-    if(event.keyCode) // el keyCode es el codigo del caracter del teclado
+    if(event.keyCode < 48 || event.keyCode > 57){
+        event.preventDefault()
+    } // el keyCode es el codigo del caracter del teclado
 }
+
+texto1.addEventListener('keydown', verificaNumero); // keydown --> es si el usuario ejecuta cualquier techa del teclado
