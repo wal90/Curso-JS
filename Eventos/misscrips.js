@@ -40,3 +40,15 @@ function bloqueoEnlace(event){
     alert('Enlace desabilitado');
 }
 enlace.addEventListener("click", bloqueoEnlace)
+
+
+//----------------------------- PAGINA 2 ---------------------------------
+
+// Para vigilar lo que pasa en el imput
+
+let texto1 = document.getElementById("mitexto");
+
+
+function verificaNumero(event){
+    
+}
