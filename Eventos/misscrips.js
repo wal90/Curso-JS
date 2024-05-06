@@ -57,3 +57,9 @@ function verificaNumero(event){
 }
 
 texto1.addEventListener('keydown', verificaNumero); // keydown --> es si el usuario ejecuta cualquier techa del teclado
+
+texto1.addEventListener('keyup', function(event){
+    console.log('Entrada del usuario: ' + event.target.value)
+});// keyup --> es cuyando se suelta una tecla
+
+
