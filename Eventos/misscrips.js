@@ -69,3 +69,17 @@ texto1.addEventListener('keypress', function(event){
 
 
 //-------------------- PÁGINA 3 -------------------------------------------------
+let menu = document.getElementById('mimenu');
+let botonMenu = document.getElementById('miboton');
+
+// botonMenu.addEventListener('click', function(){ // para cuando se haga click
+//     menu.style.display = 'block';
+// });
+
+botonMenu.addEventListener('mouseover', function(){
+    menu.style.display = 'block';
+});
+
+botonMenu.addEventListener('mouseout', function(){
+    menu.style.display = 'none';
+})
