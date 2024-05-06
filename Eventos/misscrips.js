@@ -45,10 +45,11 @@ enlace.addEventListener("click", bloqueoEnlace)
 //----------------------------- PAGINA 2 ---------------------------------
 
 // Para vigilar lo que pasa en el imput
+// codigo ASCII, es el codigo de cada caracter del techado
 
 let texto1 = document.getElementById("mitexto");
 
 
 function verificaNumero(event){
-    
+    if(event.keyCode) // el keyCode es el codigo del caracter del teclado
 }
