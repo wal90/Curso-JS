@@ -82,4 +82,8 @@ botonMenu.addEventListener('mouseover', function(){
 
 botonMenu.addEventListener('mouseout', function(){
     menu.style.display = 'none';
+});
+
+document.addEventListener('mousemove', function(event){ // Mouseover ---> para cuando se mueve el mouse
+    console.log('Posición X: ' + event.clientX + ' - Posición Y: ' + event.clientY) // Lo que hace es mostrar las coordenandas de donde se encuentra el mouse en el documento
 })
