@@ -109,3 +109,16 @@ function mostrarMensajes(contenido){
     // que contenedor mensaje contenga elemento mensaje
 
 }
+
+botonenviar.onclick = function(){
+    let mensaje = mensajeingresado.value; // quiero que me muestre lo que contiene, por eso el value
+    mostrarMensaje(mensaje);
+    socket.send(mensaje); // acca envio el mensaje
+};// este evento activa una funcion que realiza esa tarea
+
+// evento para cuando recibimos un mensaje
+
+socket.onmessage = function(event){
+    let mensaje = event.data; // event para manipular ese evento, data en informacion
+    mostrarMensaje(mensaje);
+}
