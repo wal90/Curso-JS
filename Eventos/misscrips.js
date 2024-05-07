@@ -69,6 +69,8 @@ texto1.addEventListener('keypress', function(event){
 
 
 //-------------------- PÁGINA 3 -------------------------------------------------
+
+
 let menu = document.getElementById('mimenu');
 let botonMenu = document.getElementById('miboton');
 
@@ -87,3 +89,8 @@ botonMenu.addEventListener('mouseout', function(){
 document.addEventListener('mousemove', function(event){ // Mouseover ---> para cuando se mueve el mouse
     console.log('Posición X: ' + event.clientX + ' - Posición Y: ' + event.clientY) // Lo que hace es mostrar las coordenandas de donde se encuentra el mouse en el documento
 })
+
+
+
+//------------------ PÁGINA 4 -------------------------------------------------------
+
