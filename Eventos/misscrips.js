@@ -97,3 +97,5 @@ document.addEventListener('mousemove', function(event){ // Mouseover ---> para c
 let socket = new WebSocket('ws://localhost:8080') // SOCKET ---> punto final de comunicacion en una red de computadoras, combinacion numero de puerto y numero de IP
 // webSocket pide una direccion de origen, ws( es websocket), localhost (es direccion ficticia), 8080( es el puerto ficticio donde se encuentra)
 
+let mensajeingresado = document.getElementById('mensajeIngresado');
+let botonenviar = document.getElementById('botonEnviar')
