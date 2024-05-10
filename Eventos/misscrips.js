@@ -139,4 +139,11 @@ function cambiarCancion(){
 
     let evento = new CustomEvent('CambioDeCancion'); // CustomEvent ---> es un evento personalizado
     // hay q definir cuando se ejecuta mi evento
+    audio.dispatchEvent(evento);
+}
+
+audio.addEventListener('CambioDeCancion', mostrarCancion);
+
+function mostrarCancion(){
+    console.log('Canción actual: ' + listaCanciones.value);
 }
