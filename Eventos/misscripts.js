@@ -1,6 +1,6 @@
 let boton = document.getElementById("boton1");
 let div1 = document.getElementById("div1");
-let enlace = docuement.getElementById("enlace1");
+let enlace = document.getElementById("enlace1");
 
 
 // ADD EVENT LISTENER ---> MOUSEOVER / CLICK
@@ -127,8 +127,8 @@ socket.onmessage = function(event){
 //----------------- PÁGINA 5 --------------------------------------------------------------------------------------
 
 
-let audio = docuement.getElementById('audio');
-let listaCanciones = docuemnt.getElementById('listaCanciones');
+let audio = document.getElementById('audio');
+let listaCanciones = document.getElementById('listaCanciones');
 
 listaCanciones.addEventListener('change', cambiarCancion);
 
