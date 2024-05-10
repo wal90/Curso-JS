@@ -129,3 +129,9 @@ socket.onmessage = function(event){
 
 let audio = docuement.getElementById('audio');
 let listaCanciones = docuemnt.getElementById('listaCanciones');
+
+listaCanciones.addEventListener('change', cambiarCancion);
+
+function cambiarCancion(){
+    let cancionElegida = listaCanciones.value;
+}
