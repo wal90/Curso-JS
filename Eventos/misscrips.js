@@ -122,3 +122,10 @@ socket.onmessage = function(event){
     let mensaje = event.data; // event para manipular ese evento, data en informacion
     mostrarMensaje(mensaje);
 }
+
+
+//----------------- PÁGINA 5 --------------------------------------------------------------------------------------
+
+
+let audio = docuement.getElementById('audio');
+let listaCanciones = docuemnt.getElementById('listaCanciones');
