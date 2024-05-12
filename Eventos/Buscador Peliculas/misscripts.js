@@ -7,6 +7,7 @@ let archivo = 'peliculas.json';
 
 selector.addEventListener('change', cambiarArchivo);
 selector.addEventListener('Cambiomodo', mensajemodo)
+input.addEventListener('keydown', verificaInput)
 
 function cambiarArchivo(){
     archivo = selector.value;
@@ -16,4 +17,10 @@ function cambiarArchivo(){
 
 function mensajemodo(){
     swal.fire('El archivo de busqueda ahora es ' + selector.value);
+}
+
+function verificaInput(evento){
+    if((evento.keycode <65 || evento.keycode > 90) && evento.keycode != 32 && evento.keycode != 8){
+            evento.preventDefault()
+    }
 }
