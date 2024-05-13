@@ -12,7 +12,8 @@ boton.addEventListener('click', buscar)
 
 function cambiarArchivo(){
     archivo = selector.value;
-    let evento = new CustomEvent('Cambiomodo')
+    let evento = new CustomEvent('Cambiomodo'); // custom event --> evento creado por mi
+    selector.dispatchEvent(evento);
 
 }
 
@@ -52,5 +53,8 @@ function buscar(){
                     listado.appendChild(li);
                 }
             }
+        })
+        .catch(function(error){
+            console.log(error)
         })
 }
