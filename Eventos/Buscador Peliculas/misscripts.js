@@ -27,7 +27,7 @@ function verificaInput(evento){
 }
 
 function buscar(){
-    listado.innetHTML = ''; // para que se limpe el input con la busqueda anterior
+    listado.innetHTML = ''; // para que se limpe el input con la busqueda anterior --- innetHTML reemplaza una sintaxis por una nueva
     fetch(archivo)
         .then(respuesta => respuesta.json)
         .then(function(salida){
@@ -39,7 +39,15 @@ function buscar(){
                     p.style.display = 'none';
 
                     let li = document.createElement('li');
-                    li.innerHTML = item.nombre
+                    li.innerHTML = item.nombre;
+                    li.addEventListener('mouseover', function(){
+                        let p = document.getElementById(item.nombre);
+                        p.style.display = 'block'
+                    });
+                    li.addEventListener('mouseout', function(){
+                        let p = document.getElementById(item.nombre);
+                        p.style.display = 'none';
+                    })
                 }
             }
         })
