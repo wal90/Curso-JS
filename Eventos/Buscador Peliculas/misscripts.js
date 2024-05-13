@@ -48,6 +48,8 @@ function buscar(){
                         let p = document.getElementById(item.nombre);
                         p.style.display = 'none';
                     })
+                    li.appendChild(p);
+                    listado.appendChild(li);
                 }
             }
         })
