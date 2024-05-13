@@ -22,7 +22,7 @@ function mensajemodo(){
 }
 
 function verificaInput(evento){
-    if((evento.keycode <65 || evento.keycode > 90) && evento.keycode != 32 && evento.keycode != 8){
+    if((evento.keyCode <65 || evento.keyCode > 90) && evento.keyCode != 32 && evento.keyCode != 8){
             evento.preventDefault()
     }
 }
