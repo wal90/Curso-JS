@@ -36,6 +36,10 @@ function buscar(){
                     let p = document.createElement('p');
                     p.id = item.nombre;
                     p.innetHTML = item.sinopsis;
+                    p.style.display = 'none';
+
+                    let li = document.createElement('li');
+                    li.innerHTML = item.nombre
                 }
             }
         })
