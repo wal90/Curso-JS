@@ -7,12 +7,33 @@
 </head>
 <body>
     <script>
+
+        // codigo sincrono ---> el loop (for) bloquea el hilo principal y no permite la ejecucion de las tareas que siguen hasta que se complete el ciclo for
+        // la accion 3 tiene que esperar a que termine la accion 2
+
+
         // accion 1
         console.log('Inicio dek codigo soncrónico');
+
         // accion 2
-        for( let f = 0; f < 10; f++){
-            console.log(f)
-        }
+
+        // para código sincronico
+        // for( let f = 0; f < 10; f++){
+        //     console.log(f)
+        // }
+
+        // de esta manera el codigo permite la ejecucion de otras tareas mientras se espera la finalizacion del codigo asincronico
+        setTimeout(function(){ // set time out ---> es codigo asincrono
+            for(let f = 0; f < 10 ; f++){
+                console.log(f)
+            }
+        }, 0)
+
+        
+        
+        
+        
+        
         // accion 3
         console.log('Fin del código sincrono')
     </script>
