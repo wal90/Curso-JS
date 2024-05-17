@@ -14,10 +14,21 @@
             }, 5000);
         }
 
-        function llamada(){
+        function llamada(){ // este es el callback
             console.log('Te presentas a tu turno');
         }
-        avanzaFila(llamada)
+
+
+            console.log('Llegas a la fila')
+
+
+        avanzaFila(llamada); // Acá se ve la funcion mas el callback
+
+
+            console.log('Te vas a comprar café')
+
+        //  LLEGAS A LA FILA sale primero porque TU TURNO HA LLEGADO tarda 5 seg
+        // 2° sale TE VAS A COMPRAR CAFE, TE PRESENTAS A TU TURNO es el callback.. q sale despues de TU TURNO HA LLEGADO 
     </script>
 </body>
 </html>
