@@ -7,11 +7,17 @@
 </head>
 <body>
     <script>
-        function avanzaFila(){
+        function avanzaFila(callback){ // callback --> seria lo que te avisa
             setTimeout(function(){
-                console.log('Tu turno ha llegado')
-            }, 5000)
+                console.log('Tu turno ha llegado');
+                callback()
+            }, 5000);
         }
+
+        function llamada(){
+            console.log('Te presentas a tu turno');
+        }
+        avanzaFila(llamada)
     </script>
 </body>
 </html>
