@@ -34,8 +34,12 @@
                 setTimeout(resolve, 5000, 'SALUDOS A TODOS');
             });
             let promesa2 = new Promise(function(resolve, reject){
-                setTimeout(resolve, 6000, 'OTRO SALUDO');
+                setTimeout(resolve, 7000, 'OTRO SALUDO');
             });
+            Promise.all([promesa1, promesa2]).then(function(valores){
+                console.log(valores);
+            });
+            console.log('EL CODIGO SIGUE SU CURSO')
 
 
     </script>
