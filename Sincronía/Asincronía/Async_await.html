@@ -7,8 +7,14 @@
 </head>
 <body>
     <script>
-        async function obtenerDatos(){ // ESTA FUNCION NO DEBE BLOQUEAR AL RESTO DEL CODIGO
-            let respuesta = await fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
+
+
+/// EJEMPLO 1-----------------------------------------------------------------------
+
+
+///----- sin async await 
+ // function obtenerDatos(){ 
+        //     return fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
             // .then(function(respuesta){
             //     return respuesta.json();
             // })
@@ -19,13 +25,24 @@
             //     console.error(error)
             // })
 
-            let datos = await respuesta.json();
-            console.log(datos)
-        }
 
-        obtenerDatos();
-        console.log('EL CODIFO SIGUE');
 
+
+/// con async await
+
+
+        // async function obtenerDatos(){ // ESTA FUNCION NO DEBE BLOQUEAR AL RESTO DEL CODIGO
+        //     let respuesta = await fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
+
+        //     let datos = await respuesta.json();
+        //     console.log(datos)
+        // }
+
+        // obtenerDatos();
+        // console.log('EL CODIGO SIGUE');
+
+
+// EJEMPLO 2 ------------------------------------
 
     </script>
 </body>
