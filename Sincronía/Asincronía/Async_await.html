@@ -44,13 +44,15 @@
 
 // EJEMPLO 2 ------------------------------------
     async function obtenerDatos2(){ // ESTA FUNCION NO DEBE BLOQUEAR AL RESTO DEL CODIGO
+        console.log('Este codigo esta en el comienzo')
          let respuesta = await fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico');
          let datosgasolina = await respuesta.json();
-
-         let respuestaDolar = await fetch('https://open.erapi.com/v6/latest/USD');
+        console.log('Este codigo esta en el medio') ; // los dos console log van a aparecer primero, lugeo el fecth y por ultimo el ultimo console.log
+         let respuestaDolar = await fetch('https://open.er-api.com/v6/latest/USD');
          let datosDolar = await respuestaDolar.json()
 
          console.log(datosgasolina, datosDolar);
+         console.log('Este codigo esta al final')
     }
     obtenerDatos2()
     </script>
