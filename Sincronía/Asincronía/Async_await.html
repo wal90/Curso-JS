@@ -12,6 +12,12 @@
             .then(function(respuesta){
                 return respuesta.json();
             })
+            .then(function(datos){
+                console.log(datos);
+            })
+            .catch(function(error){
+                console.error(error)
+            })
         }
     </script>
 </body>
