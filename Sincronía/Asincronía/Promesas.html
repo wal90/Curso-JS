@@ -6,6 +6,12 @@
     <title>Promesas</title>
 </head>
 <body>
-    
+    <script>
+        let miPromesa = new Promise(function(resolve, reject){ // es un objeto
+            setTimeout(function(){
+                resolve('La promesa se ha cumplido')
+            })
+        });
+    </script>
 </body>
 </html>
