@@ -43,7 +43,16 @@
 
 
 // EJEMPLO 2 ------------------------------------
+    async function obtenerDatos2(){ // ESTA FUNCION NO DEBE BLOQUEAR AL RESTO DEL CODIGO
+         let respuesta = await fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico');
+         let datosgasolina = await respuesta.json();
 
+         let respuestaDolar = await fetch('https://open.erapi.com/v6/latest/USD');
+         let datosDolar = await respuestaDolar.json()
+
+         console.log(datosgasolina, datosDolar);
+    }
+    obtenerDatos2()
     </script>
 </body>
 </html>
