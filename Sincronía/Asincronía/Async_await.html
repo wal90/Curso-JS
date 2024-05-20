@@ -6,6 +6,13 @@
     <title>Async await</title>
 </head>
 <body>
-    
+    <script>
+        function obtenerDatos(){
+            return fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
+            .then(function(respuesta){
+                return respuesta.json();
+            })
+        }
+    </script>
 </body>
 </html>
