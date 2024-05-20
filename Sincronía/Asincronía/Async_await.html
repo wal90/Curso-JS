@@ -7,8 +7,8 @@
 </head>
 <body>
     <script>
-        function obtenerDatos(){
-            return fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
+        async function obtenerDatos(){ // ESTA FUNCION NO DEBE BLOQUEAR AL RESTO DEL CODIGO
+            let respuesta = await fetch('https://api.datos.gob.mx/v1/precio.gasolina.publico')
             .then(function(respuesta){
                 return respuesta.json();
             })
@@ -19,6 +19,11 @@
                 console.error(error)
             })
         }
+
+        obtenerDatos();
+        console.log('EL CODIFO SIGUE');
+
+
     </script>
 </body>
 </html>
