@@ -7,22 +7,37 @@
 </head>
 <body>
     <script>
-        let miPromesa = new Promise(function(resolve, reject){ // es un objeto
-            setTimeout(function(){
-                let error = false;
-                if(error){
-                    reject('La promesa ha fallado')
-                } else {
-                    resolve('La promesa se ha cumplido')
-                }
+
+
+// EJEMPLO--------------------------------------------------------------------------------
+
+        // let miPromesa = new Promise(function(resolve, reject){ // es un objeto
+        //     setTimeout(function(){
+        //         let error = false;
+        //         if(error){
+        //             reject('La promesa ha fallado')
+        //         } else {
+        //             resolve('La promesa se ha cumplido')
+        //         }
                 
-            })
-        });
-        miPromesa.then(function(resultado){
-            console.log(resultado);
-        }).catch(function(error){
-            console.log(error)
-        })
+        //     })
+        // });
+        // miPromesa.then(function(resultado){
+        //     console.log(resultado);
+        // }).catch(function(error){
+        //     console.log(error)
+        // })
+
+//------------------------------------------------------------------------------------------
+
+            let promesa1 = new Promise(function(resolve, reject){
+                setTimeout(resolve, 5000, 'SALUDOS A TODOS');
+            });
+            let promesa2 = new Promise(function(resolve, reject){
+                setTimeout(resolve, 6000, 'OTRO SALUDO');
+            });
+
+
     </script>
 </body>
 </html>
