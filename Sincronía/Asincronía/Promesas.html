@@ -28,18 +28,28 @@
         //     console.log(error)
         // })
 
-//------------------------------------------------------------------------------------------
+// EJEMPLO 2------------------------------------------------------------------------------------------
 
-            let promesa1 = new Promise(function(resolve, reject){
-                setTimeout(resolve, 5000, 'SALUDOS A TODOS');
-            });
-            let promesa2 = new Promise(function(resolve, reject){
-                setTimeout(resolve, 7000, 'OTRO SALUDO');
-            });
-            Promise.all([promesa1, promesa2]).then(function(valores){
-                console.log(valores[0], + ',' + valores[1]);
-            });
-            console.log('EL CODIGO SIGUE SU CURSO')
+
+            // let promesa1 = new Promise(function(resolve, reject){
+            //     setTimeout(resolve, 5000, 'SALUDOS A TODOS');
+            // });
+            // let promesa2 = new Promise(function(resolve, reject){
+            //     setTimeout(resolve, 7000, 'OTRO SALUDO');
+            // });
+            // Promise.all([promesa1, promesa2]).then(function(valores){
+            //     console.log(valores[0], + ',' + valores[1]);
+            // });
+            // console.log('EL CODIGO SIGUE SU CURSO')
+
+// --------------------------------------------------------------------------------------------------------
+                function obtenerUsuarios(){
+                    return new Promise(function(resolve, reject){
+                        let xhr = new XMLHttpRequest();
+                        xhr.open('GET', 'https://jsonplaceholder.typicode.com/users')
+
+                    })
+                }
 
 
     </script>
