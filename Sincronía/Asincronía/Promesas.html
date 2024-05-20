@@ -46,8 +46,12 @@
                 function obtenerUsuarios(){
                     return new Promise(function(resolve, reject){
                         let xhr = new XMLHttpRequest();
-                        xhr.open('GET', 'https://jsonplaceholder.typicode.com/users')
-
+                        xhr.open('GET', 'https://jsonplaceholder.typicode.com/users');
+                        xhr.onload = function(){
+                            if(xhr.status === 200){
+                                resolve(JSON.parse(xhr.responseText))
+                            }
+                        }
                     })
                 }
 
