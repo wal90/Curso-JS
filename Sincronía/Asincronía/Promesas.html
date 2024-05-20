@@ -9,12 +9,18 @@
     <script>
         let miPromesa = new Promise(function(resolve, reject){ // es un objeto
             setTimeout(function(){
-                resolve('La promesa se ha cumplido')
+                let error = false;
+                if(error){
+                    reject('La promesa ha fallado')
+                } else {
+                    resolve('La promesa se ha cumplido')
+                }
+                
             })
         });
         miPromesa.then(function(resultado){
             console.log(resultado);
-        })
+        });
     </script>
 </body>
 </html>
