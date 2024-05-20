@@ -37,7 +37,7 @@
                 setTimeout(resolve, 7000, 'OTRO SALUDO');
             });
             Promise.all([promesa1, promesa2]).then(function(valores){
-                console.log(valores);
+                console.log(valores[0], + ',' + valores[1]);
             });
             console.log('EL CODIGO SIGUE SU CURSO')
 
