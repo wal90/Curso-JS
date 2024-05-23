@@ -11,8 +11,9 @@
         function sumar(numero1, numero2, callback){
             setTimeout(function(){
                 if(typeof numero1 != 'number' || typeof numero2 != 'number'){
-                    return callback
+                    return callback( new Error('Algun argumento no es numero'))
                 }
+                callback(null, numero1 + numero2)
             }, 1000)
         }
         sumar(20, 50);
