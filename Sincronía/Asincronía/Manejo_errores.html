@@ -8,9 +8,11 @@
 <body>
     <script>
         // callbacks
-        function sumar(numero1, numero2){
+        function sumar(numero1, numero2, callback){
             setTimeout(function(){
-                console.log(numero1 + numero2);
+                if(typeof numero1 != 'number' || typeof numero2 != 'number'){
+                    return callback
+                }
             }, 1000)
         }
         sumar(20, 50);
