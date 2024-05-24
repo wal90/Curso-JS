@@ -45,10 +45,18 @@
             })
 
         // async await 
-        function sumar(numero1, numero2){
-            setTimeout(function(){
-                console.log(numero1 + numero2);
-            }, 1000)
+       async function sumar2(numero1, numero2){
+           if(typeof numero1 != 'number' || typeof numero2 != 'number'){
+            throw new Error('Alguno de los argumentos no es un número')
+           }
+           return numero1 + numero2
+        }
+        async function manejoErrores(){
+            try {
+                
+            } catch (error) {
+                
+            }
         }
         sumar(20, 50);
     </script>
