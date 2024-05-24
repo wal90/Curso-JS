@@ -28,15 +28,21 @@
         function sumar1(numero1, numero2){
             return new Promise(function(resolve, reject){
                 setTimeout(function(){
-                console.log(numero1 + numero2);
                 if(typeof numero1 != 'number' || typeof numero2 != 'number'){
                     reject('Ambos argumentos deben ser números')
+                } else {
+                    resolve(numero1 + numero2)
                 }
             }, 1000)
             })
             
         }
-        sumar1(20, 50);
+        sumar1(20, 50)
+            .then(function(resultado){
+                console.log(resultado)
+            }).catch(function(error){
+                console.log(error)
+            })
 
         // async await 
         function sumar(numero1, numero2){
