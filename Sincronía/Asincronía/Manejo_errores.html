@@ -11,7 +11,7 @@
         function sumar(numero1, numero2, callback){
             setTimeout(function(){
                 if(typeof numero1 != 'number' || typeof numero2 != 'number'){
-                    return callback( new Error('Algun argumento no es numero'))
+                    return callback( new Error('Algun argumento no es número'))
                 }
                 callback(null, numero1 + numero2) // null es para el error... y lo otro es para el resultado
             }, 1000)
@@ -25,12 +25,18 @@
         });
 
         // promesas 
-        function sumar(numero1, numero2){
-            setTimeout(function(){
+        function sumar1(numero1, numero2){
+            return new Promise(function(resolve, reject){
+                setTimeout(function(){
                 console.log(numero1 + numero2);
+                if(typeof numero1 != 'number' || typeof numero2 != 'number'){
+                    reject('Ambos argumentos deben ser números')
+                }
             }, 1000)
+            })
+            
         }
-        sumar(20, 50);
+        sumar1(20, 50);
 
         // async await 
         function sumar(numero1, numero2){
