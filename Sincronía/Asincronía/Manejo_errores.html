@@ -53,12 +53,13 @@
         }
         async function manejoErrores(){
             try {
-                
+                let resultado = await sumar2(10,24);
+                console.log(resultado)
             } catch (error) {
-                
+                console.error(error.message)
             }
         }
-        sumar(20, 50);
+        manejoErrores();
     </script>
 </body>
 </html>
