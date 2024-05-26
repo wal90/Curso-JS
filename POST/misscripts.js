@@ -8,12 +8,14 @@ async function crearPost(titulo, contenido){
             body: JSON.stringify({
                 title: titulo,
                 body: contenido,
-                userID: 1,
+                userId: 1,
             })// funcion de javascrip que convierte un bjt de javascript en una cadena json
         })
         if(!respuesta.ok){ // si no es true
             throw new Error("Error en la solicitud: " + respuesta.statusText); // estatus text es el estatus ej 200, 201 etc
         }
+        let data = await(respuesta.json());
+        console.log("Registro creado: " + data);
     } catch (error) {
         console.error('Algo salio mal al crear el registro:'), error
     }
