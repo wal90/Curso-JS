@@ -11,6 +11,9 @@ async function crearPost(titulo, contenido){
                 userID: 1,
             })// funcion de javascrip que convierte un bjt de javascript en una cadena json
         })
+        if(!respuesta.ok){ // si no es true
+            throw new Error("Error en la solicitud: " + respuesta.statusText); // estatus text es el estatus ej 200, 201 etc
+        }
     } catch (error) {
         console.error('Algo salio mal al crear el registro:'), error
     }
