@@ -1,3 +1,5 @@
+// METODO PUT
+
 fetch('https://jsonplaceholder.typicode.com.posts/5', {
     method: 'PUT',
     headers: {
@@ -10,9 +12,20 @@ fetch('https://jsonplaceholder.typicode.com.posts/5', {
 })
 .then(respuesta => respuesta.json())
 .then(data => console.log(data))
-.catch(error => console.error('Error: ', error))
+.catch(error => console.error('Error: ', error));
 
 // es igual 
 // function(data){
 //      console.log(data)
 //}
+
+
+// METODO DELETE
+
+fetch('https://jsonplaceholder.typicode.com.posts/6', {
+    method: 'DELETE',
+})
+.then(respuesta => respuesta.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error: ', error));
+
