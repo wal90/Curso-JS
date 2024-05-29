@@ -5,7 +5,7 @@ fetch('https://jsonplaceholder.typicode.com.posts/5', {
     headers: {
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify({
+    body: JSON.stringify({ // cambia todo.. el titilo y el body
         title: 'Nuevo titulo',
         body: 'Nueva descripción'
     })
@@ -37,7 +37,7 @@ fetch('https://jsonplaceholder.typicode.com.posts/7', {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        title: 'Nuevo titulo',
+        title: 'Nuevo titulo', // para que solo cambie el titulo
     })
 })
 .then(respuesta => respuesta.json())
