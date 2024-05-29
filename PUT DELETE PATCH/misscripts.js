@@ -29,3 +29,17 @@ fetch('https://jsonplaceholder.typicode.com.posts/6', {
 .then(data => console.log(data))
 .catch(error => console.error('Error: ', error));
 
+// METODO PATH
+
+fetch('https://jsonplaceholder.typicode.com.posts/7', {
+    method: 'PATCH',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        title: 'Nuevo titulo',
+    })
+})
+.then(respuesta => respuesta.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error: ', error));
