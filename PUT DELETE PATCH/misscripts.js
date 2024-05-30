@@ -67,13 +67,13 @@ fetch('https://jsonplaceholder.typicode.com.posts', {
 .catch(error => console.error('Error: ', error));
 
 /// BEARER ----> funciona con token
-let usuario2 = 'usuario01';
-let password2 = '123456';
+
 let token = 'miToken';
 
 fetch('https://jsonplaceholder.typicode.com.posts', {
     method: 'GET',
     credentials: 'include', // q incluya la credenciales
+    cache: 'default',
     headers: {
         'Autorization': 'Bearer ' + token,
         'Content-Type': 'application/json'
@@ -84,3 +84,9 @@ fetch('https://jsonplaceholder.typicode.com.posts', {
 .then(respuesta => respuesta.json())
 .then(data => console.log(data))
 .catch(error => console.error('Error: ', error));
+
+// cache : 'no-cache' ----> va a funcionar como si no hubiera un cache
+// cache: 'no-store' -----> no va a almacenar en el cache
+// cache: 'reload' -----> fuerza al navegador a buscar el recurso
+// cache: 'force-cache' -----> hace que el nav use la copia del cache
+// cache: 'only-if-cached' -----> solamente si hay una copia disponible
