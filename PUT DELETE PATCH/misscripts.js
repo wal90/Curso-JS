@@ -47,9 +47,10 @@ fetch('https://jsonplaceholder.typicode.com.posts/7', {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+// CUANDO UN SITIO NECESITA CREDENCIALES
 fetch('https://jsonplaceholder.typicode.com.posts', {
     method: 'GET',
+    credentials: 'include', // q incluya la credenciales
   
 })
 .then(respuesta => respuesta.json())
