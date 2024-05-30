@@ -65,3 +65,22 @@ fetch('https://jsonplaceholder.typicode.com.posts', {
 .then(respuesta => respuesta.json())
 .then(data => console.log(data))
 .catch(error => console.error('Error: ', error));
+
+/// BEARER ----> funciona con token
+let usuario2 = 'usuario01';
+let password2 = '123456';
+let token = 'miToken';
+
+fetch('https://jsonplaceholder.typicode.com.posts', {
+    method: 'GET',
+    credentials: 'include', // q incluya la credenciales
+    headers: {
+        'Autorization': 'Bearer ' + token,
+        'Content-Type': 'application/json'
+
+    }
+  
+})
+.then(respuesta => respuesta.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error: ', error));
