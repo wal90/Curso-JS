@@ -43,3 +43,15 @@ fetch('https://jsonplaceholder.typicode.com.posts/7', {
 .then(respuesta => respuesta.json())
 .then(data => console.log(data))
 .catch(error => console.error('Error: ', error));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+fetch('https://jsonplaceholder.typicode.com.posts', {
+    method: 'GET',
+  
+})
+.then(respuesta => respuesta.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error: ', error));
