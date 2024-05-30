@@ -48,9 +48,18 @@ fetch('https://jsonplaceholder.typicode.com.posts/7', {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // CUANDO UN SITIO NECESITA CREDENCIALES
+
+let usuario = 'usuario01';
+let password = '123456';
+
 fetch('https://jsonplaceholder.typicode.com.posts', {
     method: 'GET',
     credentials: 'include', // q incluya la credenciales
+    headers: {
+        'Autorization': 'Basic ' + btoa(usuario + ':' + password),
+        'Content-Type': 'application/json'
+
+    }
   
 })
 .then(respuesta => respuesta.json())
