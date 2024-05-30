@@ -74,6 +74,7 @@ fetch('https://jsonplaceholder.typicode.com.posts', {
     method: 'GET',
     credentials: 'include', // q incluya la credenciales
     cache: 'default',
+    redirect: 'follow', // valor por defecto, limite maximo 20
     headers: {
         'Autorization': 'Bearer ' + token,
         'Content-Type': 'application/json'
@@ -90,3 +91,16 @@ fetch('https://jsonplaceholder.typicode.com.posts', {
 // cache: 'reload' -----> fuerza al navegador a buscar el recurso
 // cache: 'force-cache' -----> hace que el nav use la copia del cache
 // cache: 'only-if-cached' -----> solamente si hay una copia disponible
+
+
+// PARA REDICCIONAR LA PAGINA ---> redirect
+//  redirect: 'error', ---> fecth lleva directamente al error
+// redirect: 'manual', ---> devuelve el código de la redireccion en sí --- se cambia el primer then
+    // .then(response => {
+       // if(response.type === 'opaqueredirect){
+        //  let nuevaUbicacion = response.headers.get('location');
+        //  console.log('REDIRIGIENDO A:' , nuevaUbicacion )
+      // } else {
+        // return response.json()
+      //}
+   // })
