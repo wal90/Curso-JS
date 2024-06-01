@@ -12,6 +12,9 @@ let miToken = 'Este es mi token';
 axios.interceptors.request.use(
     (config) => {
         config.headers.Authorization = `Bearer ${miToken}`
+        return config;
+    }, (error)=>{
+        return Promise.reject(error)
     }
 )
 
