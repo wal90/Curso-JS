@@ -8,4 +8,7 @@ function obtenerInfo(){
             listaInformacion.appendChild(elemento)
         }
     })
+    .catch(function(error){
+        console.log(error)
+    })
 }
