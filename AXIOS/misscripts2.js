@@ -18,6 +18,16 @@ axios.interceptors.request.use(
     }
 )
 
+// de respuesta
+axios.interceptors.response.use(
+    (respuesta) =>{
+        respuesta.data.customField = 'Nuevo campo';
+        return respuesta
+    }, (error) => {
+        return Promise.reject(error)
+    }
+)
+
 let pedido1 = axios.get('https://api.ejemplo.com/data1');
 let pedido2 = axios.get('https://api.ejemplo.com/data2');
 let pedido3 = axios.get('https://api.ejemplo.com/data3');
@@ -37,3 +47,7 @@ axios.post('https://jsonplaceholder.typicode.com/posts', datos) // hay q poner e
 
     // AXIOS permite hacer varias solicitudes http al mismo tiempo
     // interceptores => de solicitud o de respuesta
+
+
+
+    // BASES DE DATOS 
