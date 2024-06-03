@@ -52,3 +52,4 @@ axios.post('https://jsonplaceholder.typicode.com/posts', datos) // hay q poner e
 
     // BASES DE DATOS 
     // conjunto de datos organizados y estructurados que pertenecen a un mismo contexto
+    // base de datos relacionales y no relacionales, la diferencia es la forma en que se almacenan
