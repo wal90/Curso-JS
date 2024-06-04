@@ -56,4 +56,4 @@ axios.post('https://jsonplaceholder.typicode.com/posts', datos) // hay q poner e
 
 // relacional ----> modelo relacional, relacion entre cada tabla
 // atributos --> son caracteristicas
-// clave primaria PK (PRIMARY KEY)
+// clave primaria PK (PRIMARY KEY) --> valores únicos
