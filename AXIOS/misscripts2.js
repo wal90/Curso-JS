@@ -58,3 +58,5 @@ axios.post('https://jsonplaceholder.typicode.com/posts', datos) // hay q poner e
 // atributos --> son caracteristicas
 // clave primaria PK (PRIMARY KEY) --> valores únicos
 // clave foranea FK ---> primary key en otra tabla, relacion entre ellas
+
+//MySQL
